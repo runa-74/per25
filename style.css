@@ -1,0 +1,113 @@
+*{
+   box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+/*hader part*/
+.header{
+    text-align: center;
+    background: #203951;
+    padding: 32px;
+    color: #fff ;
+}
+
+/*top nav part*/
+.topnav{
+    overflow: hidden;
+    background-color: darkgray;
+
+}
+.topnav a{
+    float: left;
+    text-decoration: none;
+    display: block;
+    color: #000;
+    font-weight: bold;
+    padding: 13px 14px;
+}
+.topnav #right{
+    float: right;
+    background-color: red;
+    color: #fff;
+
+}
+/*topnav hover part*/
+.topnav a:hover{
+    background-color: black;
+    color: #fff;
+}
+.topnav #right:hover{
+    background-color: green;
+}
+
+/*.........topnave end..........*/
+/*row start*/
+/*.leftcol{
+    float: left;
+    width: 72%;
+    background-color: rgb(163,183,200);
+
+}*/
+.leftcol{
+    margin-top: 20px;
+    float: left;
+    width: 70%;
+}
+.forimg{
+    background-color: rgb(101,135,136);
+    padding: 20px;
+    width: 100%;
+
+}
+/*.card{
+    padding: 20px;
+    margin-top: 10px;
+}*/
+.card{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: skyblue;
+}
+.rightcol{
+    float: left;
+    width: 24%;
+    margin: 20px 0px 20px 20px;
+    background-color: #757077;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*footer sectoion*/
+.footer{
+    padding: 23px;
+    background-color: darkgray;
+    text-align: center;
+    width: 100%;
+    
+}
+
+/*Responsive layout -when device screen size is 800px
+wids,will converted into two column*/
+
+@media screen and (max-width:800px){
+    .leftcol,.rightcol{
+        width: 100%;
+        padding: 0;
+    }
+}
+/*for 400px*/
+@media screen and (max-width:400px){
+    .topnav a{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
